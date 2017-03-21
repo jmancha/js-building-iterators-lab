@@ -7,10 +7,15 @@ var myReduce = require('./myReduce');
   To run it on the console do: `node index.js`
 ***********************************************************************/
 
-var numArray = [0,1,10,100,1000];
+function myForEach(array,callback){
+	for(var i = 0; i < array.length; i++){
+		callback(array[i],i,array);
+	}
+	
+	}	
 
 
-/* myEach */
+
 
 //
 /*myEach(numArray, function print(element, index, arr) {
